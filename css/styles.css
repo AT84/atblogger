@@ -126,6 +126,13 @@ width: 590px;
 padding: 5px;
 }
 
+
+.article_tags a {
+color: #056f83;
+font-size: 10px;
+}
+
+
 aside {
 width: 200px;
 float: left;
