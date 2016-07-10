@@ -1,2 +1,2 @@
 # atblogger
-atblogger html &amp; css code
+code for my blog atblogger.com in html &amp; css
