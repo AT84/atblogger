@@ -6,7 +6,7 @@ background-color: #008db7;
 
 
 header {
-background-color: #8F8F8F ;
+background-color: #A9A9A9 ;
 padding: 15px 15px 0px 15px;
 margin: 3px 3px 0px 3px;
 color: #ffffff;
@@ -15,7 +15,7 @@ height: 130px;
 }
 
 nav {
-background-color: #8F8F8F ;
+background-color: #A9A9A9 ;
 color: #ffffff;
 font-family: courier;
 margin: 0px 3px 3px 3px;
@@ -67,10 +67,11 @@ border-right: 1px solid #056f83;
 }
 
 
-h2 {
+article h2 {
 font-family: courier;
 font-size: 30px;
 color: #056f83;
+margin: 30px 30px 20px 0px;
 }
 
 h2 a {
@@ -80,8 +81,9 @@ color: #056f83;
 
 h3 {
 color: #808080;
-font-family: Times New Roman, Times, arial;
+font-family: arial;
 font-style: italic;
+font-size: 19px;
 }
 
 article p {
