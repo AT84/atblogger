@@ -182,6 +182,11 @@ color: #056f83;
 font-size: 12px;
 }
 
+p.archive_content {
+margin: 0px;
+}
+
+
 p.p_aside {
 font-family: arial;
 font-size: 12px;
