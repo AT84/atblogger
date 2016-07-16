@@ -99,6 +99,18 @@ margin: 0px 30px 10px 0px;
 }
 
 
+ul img {
+padding: 2px 10px 0px 5px;
+}
+
+.image_left img {
+padding: 2px 0px 0px 5px;
+}
+
+article a {
+color: #056f83;
+}
+
 .article_datetime {
 font-family: arial;
 font-size: 13px;
