@@ -14,14 +14,48 @@
 	</head>
 	<body>
 	
-	
-<div class="wrapper">		
+<!--facebook SDK load script START-->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 'your-app-id',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script> <!--END facebook SDK load script-->
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7&appId=1788740074671168";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--facebook SDK load script END-->
+
+
+<!--page wrapper START-->	
+<div class="wrapper">
+
+<!--header START-->			
 		<header>
 		<img src="images/logo_header.png" alt="logo" align="left" />
 			<h1>AT blogger</h1>
 			<h4>a blog about a Londoner trying to learn new skills and to have a happy life</h4>
 			
-		</header> <!--close header-->
+		</header> <!--header END-->
+<!--navigation START-->			
 		<nav>
 				<ul>
 					<li><a href="index.html">home</a></li>
@@ -30,10 +64,13 @@
 					<li style="display:none;"><a href="">wellbeing</a></li>
 					<li><a href="randomthoughts.html">random thoughts</a></li>
 				</ul>
-			</nav> <!--close navigation-->
-		
+			</nav> <!--navigation END-->
+
+<!--main START articles-->			
 		<main>
-						<article>
+		
+<!--article START-->	
+			<article>
 				<span class=article_datetime>
 				<time datetime="2016-07-16">Saturday 16th July 2016
 				</time>
@@ -73,13 +110,13 @@ Very good lecturer. I watched most of the videos on my phone/tablet (around 10mi
 				<br>
 				</p>
 			</article>
-				<!-- Post Footer START -->
+<!--article END-->	
+<!-- Post Footer START -->
 				<div class=article_footer>
 				<span class = "postedby_article_footer">
 				Posted by AT at <time datetime="16:32">16:32
 				</time>
 				</span>
-
 
 <div id="share-buttons">
 <!-- Email -->
@@ -103,16 +140,29 @@ Very good lecturer. I watched most of the videos on my phone/tablet (around 10mi
         <img src="images/google.png" alt="Google" title="Share to Google+" />
 	</a>
 </div>
+
+</div> <!-- Post Footer END -->
 	
+				<div class = "article_tags">
+				Tags: 
+				<a href="http://www.atblogger.com/articles/2016/07/16_All_I_have_learned_I_learned_from_books.html">Reading List</a>
+				<a href="http://www.atblogger.com/articles/2016/07/16_All_I_have_learned_I_learned_from_books.html">HTML</a>
+				<a href="http://www.atblogger.com/articles/2016/07/16_All_I_have_learned_I_learned_from_books.html">CSS</a>
+				<a href="http://www.atblogger.com/articles/2016/07/16_All_I_have_learned_I_learned_from_books.html">Coursera</a>
+				<a href="http://www.atblogger.com/articles/2016/07/16_All_I_have_learned_I_learned_from_books.html">W3Schools</a>
+				<a href="http://www.atblogger.com/articles/2016/07/16_All_I_have_learned_I_learned_from_books.html">Jon Duckett</a>
+				</div>		
+
+
+<!-- Facebook Comment START -->
+<div class="fb-comments" data-href="http://www.atblogger.com/articles/2016/07/16_All_I_have_learned_I_learned_from_books.html" data-numposts="2" data-width="600"></div>		
+<!-- Facebook Comment END -->	
 			
 		</main>
 
 <!-- Aside START -->		
 		<aside>
-		<a class="twitter-follow-button"
-  		href="https://twitter.com/at_blogger"
-  		data-show-count="false">
-		Follow @at_blogger</a>
+		<div class="twitter-follow-button"><a  href="https://twitter.com/at_blogger" target="_blank"> <img src="images/followtwitter_atblogger.png" alt="Follow Twitter @at_blogger"/></a></div>
 		<h4> Archive </h4>
 		<details>
 			<summary>2016</summary>
@@ -135,24 +185,7 @@ Very good lecturer. I watched most of the videos on my phone/tablet (around 10mi
 		</footer>
 <!-- Footer START -->	
 </div>
-
-<!--twitter follow script-->
-<script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
- 
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
- 
-  return t;
-}(document, "script", "twitter-wjs"));</script> <!--twitter follow script-->	
+	
 	
 
 </body>
