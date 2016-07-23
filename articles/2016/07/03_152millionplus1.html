@@ -23,6 +23,37 @@ xmlns="https://www.w3.org/1999/xhtml" xmlns:og="https://ogp.me/ns#" xmlns:fb="ht
 	</head>
 	
 	<body>
+
+<!--facebook SDK load script START-->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 'your-app-id',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script> <!--END facebook SDK load script-->
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7&appId=1788740074671168";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--facebook SDK load script END-->
+
 	
 	
 <div class="wrapper">		
@@ -101,14 +132,15 @@ xmlns="https://www.w3.org/1999/xhtml" xmlns:og="https://ogp.me/ns#" xmlns:fb="ht
 				Tags: <a href="http://www.atblogger.com/articles/2016/07/03_152millionplus1.html">Introduction</a>
 				</div>		
 
+<!-- Facebook Comment START -->
+<div class="fb-comments" data-href="http://www.atblogger.com/articles/2016/07/03_152millionplus1.html" data-numposts="10" data-width="600"></div>		
+<!-- Facebook Comment END -->
+
 		</main>
 
 <!-- Aside START -->		
 		<aside>
-		<a class="twitter-follow-button"
-  		href="https://twitter.com/at_blogger"
-  		data-show-count="false">
-		Follow @at_blogger</a>
+		<div class="twitter-follow-button"><a  href="https://twitter.com/at_blogger" target="_blank"> <img src="images/followtwitter_atblogger.png" alt="Follow Twitter @at_blogger"/></a></div>
 		<h4> Archive </h4>
 		<details>
 			<summary>2016</summary>
