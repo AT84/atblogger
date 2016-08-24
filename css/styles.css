@@ -170,11 +170,14 @@ margin: 0px 0px 40px 0px;
 }
 
 .comments_article {
+width: 590px;
+}
+
+.comments_article_test {
 margin: 0px 20px 40px 0px;
 width: 590px;
 padding: 5px 5px 0px 5px;
 }
-
 
 aside {
 width: 200px;
