@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang = "en"
+xmlns="https://www.w3.org/1999/xhtml" xmlns:og="https://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"
+>
+       
+	<head>
+		<meta charset = "UTF-8">
+		<title>HTML Website Layout</title>
+		<link rel="icon" type="image/png" href="http://www.atblogger.com/images/logo_transparent.png"/>
+		<link href="../../../css/styles.css" type="text/css" rel="stylesheet" />
+		<meta name="description"
+			content="Fixed width layout and 960px width" />
+		<meta name="keywords"
+			content="html, css, layout" />
+		<meta name="author"
+			content="AT" />
+		<meta property="fb:app_id" 			   content="1788740074671168" />
+		<meta property="og:url"                content="http://www.atblogger.com/articles/2016/09/08_HtmlWebsiteLayout.html" />
+		<meta property="og:type"               content="article" />
+		<meta property="og:title"              content="HTML Website Layout" />
+		<meta property="og:description"        content="Fixed width layout and 960px width" />
+		<meta property="og:image" 			   content="http://www.atblogger.com/images/websitelayout01.png" />
+		<meta name="twitter:card"              content="summary"/>
+		<meta name="twitter:url"               content="http://www.atblogger.com/articles/2016/09/08_HtmlWebsiteLayout.html"/>
+		<meta name="twitter:site"              content="@at_blogger" />
+		<meta name="twitter:creator"           content="@at_blogger">
+		<meta name="twitter:title"             content="HTML Website Layout">
+		<meta name="twitter:description"       content="Fixed width layout and 960px width"/>
+		<meta name="twitter:image:src"         content="http://www.atblogger.com/images/websitelayout01.png" />
+	</head>
+	
+	<body>
+
+	
+<div class="wrapper">		
+		<header>
+			<img src="http://www.atblogger.com/images/logo_header.png" alt="logo" align="left" />
+			<h1>AT blogger</h1>
+			<h4>a blog about a Londoner trying to learn new skills and to have a happy life</h4>
+			
+		</header> <!--close header-->
+		<nav>
+				<ul>
+					<li><a href="../../../index.html">home</a></li>
+					<li><a href="../../../coding.html">coding</a></li>
+					<li><a href="../../../bestof.html">best of</a></li>
+					<li style="display:none;"><a href="">wellbeing</a></li>
+					<li><a href="../../../randomthoughts.html">random thoughts</a></li>
+				</ul>
+			</nav> <!--close navigation-->
+		
+		<main>
+			<article>
+				<span class=article_datetime>
+				<time datetime="2016-09-08">Thursday 8th September 2016
+				</time>
+				</span>
+				<h2>HTML Website Layout
+				</h2>
+				<h3>Fixed width layout and 960px width</h3>
+				<p>
+				The first thing to do when you are about to start your web page is to think about the layout, the structure of your page. Of course that is after you have learned about the basic html tags and css syntax (check my previous article on my initial reading list).
+<br><br>
+It is important to have a look at different website structures to understand what you like and what you don’t like. There are useful articles that analyse the design and give advice to better convey your message (colours, fonts, contrast etc.). 
+<br><br>
+Some websites have a big top catchy title area with pictures or flash animations to draw the user’s attention to explore the website, to navigate more pages using infographics or via a ‘call to action’ and consequently they aim to achieve a lower bounce rate.
+<br><br>
+Personally I went for a not so big header area, maybe less catchy but in the end it is a blog so I wanted everyone to see at least the beginning of my first article when readers land on the main page.
+<br><br>
+I believe that I have chosen a pretty standard structure for my blog and I tried to use the adapted html5 elements like <i> &lt;article&gt; , &lt;footer&gt;, &lt;aside&gt;, &lt;details&gt; and &lt;summary&gt; </i> <br> taking the risk that they might not be understood properly by old browsers as I haven’t adapted my code yet for older browsers - one more task on my blog’s to do list.
+<br><br>
+My advice is to take a pen and paper before starting to code, and to wireframe the structure desired, draft the different html tags / boxes as it will help you organise your page and think about how you want to present the information.
+<br><br>
+This is the structure of my blog (for now :) as I am still learning new tricks, the structure might change in the future):
+</p>		
+				<p style="text-align:center;"> <img src="../../../images/websitelayout01.png" alt="website layout diagram" align="middle" width=500/></p>
+				
+				<p>
+				I chose a fixed width layout as to begin with I thought it would easier to control and to accomplish the desired result. This means that the size of my page does not increase or decrease as the user minimises or maximises the browser window. So anything that appears on my blog - the boxes or images - have a fixed size (in pixels as defined in my CSS file) and will always be placed and look as I coded them.
+<br><br>
+In a liquid layout design, instead of a fixed pixel values, percentages are used.
+<br><br>
+Example in the CSS for a fixed width layout design, a specific measurement in pixels will be entered:
+
+<pre>
+body {
+    width: 960px; }
+</pre>
+<p>
+For a liquid layout design, a percentage will be entered, the body width will always fill e.g. 90% of the entire browser window:
+</p>
+<pre>
+body {
+    width: 90%; }
+</pre>
+<p>
+So with the width added to just give you a general idea:
+</p>
+				<p style="text-align:center;"> <img src="../../../images/websitelayout02.png" alt="website layout diagram including the width" align="middle" width=500/></p>				
+				<p> 
+				You will have figured out that my <i>width(main)</i> + <i>width(aside)</i> is not equal to the <i>width(wrapper)</i> as I am using a margin and a padding in my CSS so that the text is not ‘stuck’ to the borders of each element used - I might go through this in my next article. So don’t forget:
+<br><br>
+<em>width + padding + border + margin = actual width</em> of an element as it appears on your browser
+<br><br>
+And one last thing, your page must be easily readable and accessible. Remember that there is a high portion of the population that has colour vision deficiency (colour blindness) so you should take that as well into consideration when choosing your colours’ palette.
+</p>
+			
+			</article>
+				<!-- Post Footer START -->
+				<div class=article_footer>
+				<span class = "postedby_article_footer">
+				Posted by AT at <time datetime="19:34">19:34
+				</time>
+				</span>
+
+
+<div id="share-buttons">
+<!-- Email -->
+    <a href="mailto:?Subject=atblogger's%20article:%20HMTL%20Website%20Layout&#63;&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20http://www.atblogger.com/articles/2016/09/08_HtmlWebsiteLayout.html">
+        <img src="../../../images/email.png" alt="Email" title="Email this"/>
+    </a>   
+ <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=http://www.atblogger.com/articles/2016/09/08_HtmlWebsiteLayout.html" target="_blank">
+        <img src="../../../images/facebook.png" alt="Facebook" title="Share to Facebook"/>
+    </a>    
+<!-- Twitter -->
+    <a href="https://twitter.com/share?url=http://www.atblogger.com/articles/2016/09/08_HtmlWebsiteLayout.html&amp;text=@at_blogger%20HMTL%20Website%20Layout&amp;hashtags=html,css,fixedwidthlayout" target="_blank">
+        <img src="../../../images/twitter.png" alt="Twitter" title="Tweet this"/>
+	</a>
+<!-- Pinterest -->
+<!--    <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
+       <img src="images/icons/pinterest.png" alt="Pinterest" title="Share to Pinterest" />
+	</a>-->
+<!-- Google+ -->
+    <a href="https://plus.google.com/share?url=http://www.atblogger.com/articles/2016/09/08_HtmlWebsiteLayout.html" target="_blank">
+        <img src="../../../images/google.png" alt="Google" title="Share to Google+" />
+	</a>
+</div>
+				</div> <!-- Post Footer START -->
+	
+				<div class = "article_tags">
+				Tags: 
+				<a href="http://www.atblogger.com/articles/tags/html.html">html</a>
+				<a href="http://www.atblogger.com/articles/tags/css.html">css</a>
+				<a href="http://www.atblogger.com/articles/2016/09/08_HtmlWebsiteLayout.html">layout</a>
+
+				</div>		
+
+<!-- Disqus Comment START -->
+<div class = "comments_article">
+<div id="disqus_thread"></div>
+</div>
+<!-- Disqus Comment END -->	
+
+		</main>
+
+<!-- Aside START -->		
+		<aside>
+		<div class="twitter-follow-button"><a  href="https://twitter.com/at_blogger" target="_blank"> <img src="../../../images/followtwitter_atblogger.png" alt="Follow Twitter @at_blogger"/></a></div>
+		<h4> Archive </h4>
+		<details>
+			<summary>2016</summary>
+			<p class="archive_content"> <a href="http://www.atblogger.com/articles/2016/09/08_HtmlWebsiteLayout.html">HTML Website Layout</a>
+			</p>
+			<p class="archive_content"> <a href="http://www.atblogger.com/articles/2016/08/22_why_am_I_lazy.html">Why am I lazy?</a>
+			</p>
+			<p class="archive_content"> <a href="http://www.atblogger.com/articles/2016/07/16_All_I_have_learned_I_learned_from_books.html">All I have learned I learned from...</a>
+			</p>
+			<p class="archive_content"> <a href="http://www.atblogger.com/articles/2016/07/03_152millionplus1.html">152 million + 1</a>
+			</p>
+		</details>
+				<h4> About me </h4>
+		<p class="p_aside"> AT stands for Aline Tsangarides.
+		I am a London-based Senior Business Analyst in my 30s, married, no children.
+		Self-learning to code html and css through building this blog from scratch and in the process I will talk about the highs and lows of my life. 
+		</p>
+		</aside>
+<!-- Aside END -->	
+
+<!-- Footer START -->	
+		<footer>
+		&copy; 2016 atblogger.com All Rights Reserved
+		</footer>
+<!-- Footer START -->	
+</div>
+
+
+
+<!--facebook SDK load script START-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7&appId=1788740074671168";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--facebook SDK load script END-->    
+
+
+<!-- SCRIPT DISQUS START -->	
+<script>
+
+/**
+ *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+
+var disqus_config = function () {
+    this.page.url = 'http://www.atblogger.com/articles/2016/09/08_HtmlWebsiteLayout.html';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = '08_HtmlWebsiteLayout'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//at-blogger.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://www.atblogger.com/articles/2016/09/08_HtmlWebsiteLayout.html">comments powered by Disqus.</a></noscript>
+<!-- SCRIPT DISQUS END-->
+
+
+
+<!-- GoogleAnalytics START -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82951243-1', 'auto');
+  ga('send', 'pageview');
+
+</script> <!-- GoogleAnalytics END -->		
+
+</body>
+
